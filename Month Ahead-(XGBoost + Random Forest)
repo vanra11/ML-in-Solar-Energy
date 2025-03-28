@@ -5,9 +5,7 @@ from sklearn.preprocessing import StandardScaler
 from sklearn.ensemble import StackingRegressor, RandomForestRegressor
 from xgboost import XGBRegressor
 from sklearn.metrics import mean_squared_error, mean_absolute_error, r2_score
-
 df = pd.read_csv("/content/Solar Power Plant Data.csv")
-
 df = df[['Date-Hour(NMT)', 'WindSpeed', 'Sunshine', 'AirPressure',
          'Radiation', 'AirTemperature', 'RelativeAirHumidity', 'SystemProduction']].copy()
 
